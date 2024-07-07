@@ -1,9 +1,7 @@
-import { ExitTransition } from "@/components/Transition";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 
 export default function Home() {
-  const [show, setShow] = useState(false);
+  const [_, setShow] = useState(false);
 
   useEffect(() => {
     const id = setTimeout(() => {
@@ -15,7 +13,6 @@ export default function Home() {
 
   return (
     <>
-      <ExitTransition />
       <div>Home</div>
     </>
   );
